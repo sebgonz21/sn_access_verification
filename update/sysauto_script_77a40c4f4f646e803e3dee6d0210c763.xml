@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>App Access Verification - Fire Events, Run THIRD</name>
+        <run_as display_value="Admin ">fa14b1e9133d9a0053dc71522244b0be</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period>1970-01-02 00:00:00</run_period>
+        <run_start>2018-07-27 14:25:10</run_start>
+        <run_time>1970-01-01 05:00:00</run_time>
+        <run_type>on_demand</run_type>
+        <script><![CDATA[/** 
+	Goes through all verification records and does calculation to make sure only one event
+	is fired per Manager. Event Sends notification
+*/
+(function(){
+	
+	var rec = new GlideRecord('x_kasp_app_access_application_access_verification');
+	rec.orderBy('manager');
+	rec.query();
+	rec.next();
+	
+	var currentRecordSysId = rec.sys_id;
+	var currentManager = rec.getValue('manager');
+	
+	var currentRecord = new GlideRecord('x_kasp_app_access_application_access_verification');
+	currentRecord.get(currentRecordSysId);
+	
+	
+	while(rec.next()){
+		gs.info('>>>>>>>>> VERIFY '+ currentRecord.getElement('manager').getDisplayValue() + ' VS ' + rec.getElement('manager').getDisplayValue());
+		if(currentManager != rec.getValue('manager')){
+			gs.info('>>>>>>>>> VERIFY DIFFERENT');
+			gs.eventQueue('x_kasp_app_access.run',currentRecord,currentManager,currentRecord.getElement('manager').getDisplayValue());
+			currentRecordSysId = rec.sys_id;
+			currentManager = rec.getValue('manager');
+			currentRecord.get(currentRecordSysId);
+		}
+	}
+	gs.eventQueue('x_kasp_app_access.run',currentRecord,currentManager,currentRecord.getElement('manager').getDisplayValue());
+})();]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>sebgar01</sys_created_by>
+        <sys_created_on>2016-07-15 14:25:47</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>77a40c4f4f646e803e3dee6d0210c763</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>App Access Verification - Fire Events, Run THIRD</sys_name>
+        <sys_package display_value="Application Access Verification" source="x_kasp_app_access">036192412b7e9200229d7b9ee8da1506</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Application Access Verification">036192412b7e9200229d7b9ee8da1506</sys_scope>
+        <sys_update_name>sysauto_script_77a40c4f4f646e803e3dee6d0210c763</sys_update_name>
+        <sys_updated_by>sebgar01</sys_updated_by>
+        <sys_updated_on>2017-01-17 20:37:14</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

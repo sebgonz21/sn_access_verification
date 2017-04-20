@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>yes</field>
+        <global>true</global>
+        <messages/>
+        <name>Yes_No</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+	if(g_form.getValue('yes') == 'true'){
+		g_form.setValue('no',false);
+	}
+	
+	
+   //Type appropriate comment here, and begin script below
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>sebgar01</sys_created_by>
+        <sys_created_on>2016-09-09 20:03:32</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>56eae58913f9264053dc51522244b083</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Yes_No</sys_name>
+        <sys_overrides display_value="">global</sys_overrides>
+        <sys_package display_value="Application Access Verification" source="x_kasp_app_access">036192412b7e9200229d7b9ee8da1506</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Application Access Verification">036192412b7e9200229d7b9ee8da1506</sys_scope>
+        <sys_update_name>sys_script_client_56eae58913f9264053dc51522244b083</sys_update_name>
+        <sys_updated_by>sebgar01</sys_updated_by>
+        <sys_updated_on>2016-09-09 20:27:01</sys_updated_on>
+        <table>x_kasp_app_access_application_access_verification</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

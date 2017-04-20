@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions table="x_kasp_app_access_application_access_verification">does_not_report_to_me=true^EQ<item endquery="false" field="does_not_report_to_me" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <model_id/>
+        <model_table/>
+        <on_load>false</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>true</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+	
+	g_form.setValue('verification_message',"");
+
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+	
+	g_form.setValue('verification_message',"This associate does not report to me");
+
+}]]></script_true>
+        <set_values/>
+        <short_description>Grey Out If user does not report to manager</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>sebgar01</sys_created_by>
+        <sys_created_on>2016-09-08 18:20:07</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>afc980f81375e24053dc51522244b07e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Grey Out If user does not report to manager</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Application Access Verification" source="x_kasp_app_access">036192412b7e9200229d7b9ee8da1506</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Application Access Verification">036192412b7e9200229d7b9ee8da1506</sys_scope>
+        <sys_update_name>sys_ui_policy_afc980f81375e24053dc51522244b07e</sys_update_name>
+        <sys_updated_by>sebgar01</sys_updated_by>
+        <sys_updated_on>2016-09-08 19:43:36</sys_updated_on>
+        <table>x_kasp_app_access_application_access_verification</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+</record_update>

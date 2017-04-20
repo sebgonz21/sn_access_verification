@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="ac9f4b112bb2d200229d7b9ee8da15e2" sys_domain="global" table="x_kasp_app_access_application_access_verification" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>ac189d180f7bee004789e34be1050e66</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>manager</element>
+            <position>1</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>20189d180f7bee004789e34be1050e67</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>user</element>
+            <position>2</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>a0189d180f7bee004789e34be1050e67</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>does_not_report_to_me</element>
+            <position>3</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>24189d180f7bee004789e34be1050e67</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>a4189d180f7bee004789e34be1050e67</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>last_verification_date</element>
+            <position>5</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>28189d180f7bee004789e34be1050e67</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <position>6</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>a8189d180f7bee004789e34be1050e67</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>7</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>2c189d180f7bee004789e34be1050e67</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>o</element>
+            <position>8</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>ac189d180f7bee004789e34be1050e67</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>9</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>20189d180f7bee004789e34be1050e68</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>acs</element>
+            <position>10</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>a0189d180f7bee004789e34be1050e68</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>hyperion_essbase</element>
+            <position>11</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>24189d180f7bee004789e34be1050e68</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>imany</element>
+            <position>12</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>a4189d180f7bee004789e34be1050e68</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>jdedwards</element>
+            <position>13</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>28189d180f7bee004789e34be1050e68</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>peoplesoft</element>
+            <position>14</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>a8189d180f7bee004789e34be1050e68</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>rams</element>
+            <position>15</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>2c189d180f7bee004789e34be1050e68</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>retail_lease</element>
+            <position>16</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>ac189d180f7bee004789e34be1050e68</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>17</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>20189d180f7bee004789e34be1050e69</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>rbi</element>
+            <position>18</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>a0189d180f7bee004789e34be1050e69</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>rma_approval</element>
+            <position>19</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>24189d180f7bee004789e34be1050e69</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>rma_credit</element>
+            <position>20</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>a4189d180f7bee004789e34be1050e69</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sewn</element>
+            <position>21</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>28189d180f7bee004789e34be1050e69</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>spade</element>
+            <position>22</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>a8189d180f7bee004789e34be1050e69</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>workflow_ar</element>
+            <position>23</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>2c189d180f7bee004789e34be1050e69</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>micros_balance</element>
+            <position>24</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>ac189d180f7bee004789e34be1050e69</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>25</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>20189d180f7bee004789e34be1050e6a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>message2</element>
+            <position>26</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>a0189d180f7bee004789e34be1050e6a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>27</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>24189d180f7bee004789e34be1050e6a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>yes</element>
+            <position>28</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>a4189d180f7bee004789e34be1050e6a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>no</element>
+            <position>29</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>28189d180f7bee004789e34be1050e6a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>30</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>a8189d180f7bee004789e34be1050e6a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>31</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>2c189d180f7bee004789e34be1050e6a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>verification_message</element>
+            <position>32</position>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-12-15 20:50:16</sys_created_on>
+            <sys_id>ac189d180f7bee004789e34be1050e6a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_kasp_app_access_application_access_verification" sys_domain="global" view="Default view">ac9f4b112bb2d200229d7b9ee8da15e2</sys_ui_section>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-12-15 20:50:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_kasp_app_access_application_access_verification</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-04-14 18:52:21</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>ac9f4b112bb2d200229d7b9ee8da15e2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_kasp_app_access_application_access_verification</sys_name>
+            <sys_overrides display_value="">global</sys_overrides>
+            <sys_package display_value="Application Access Verification" source="x_kasp_app_access">036192412b7e9200229d7b9ee8da1506</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Application Access Verification">036192412b7e9200229d7b9ee8da1506</sys_scope>
+            <sys_update_name>sys_ui_section_ac9f4b112bb2d200229d7b9ee8da15e2</sys_update_name>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-04-14 18:52:21</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

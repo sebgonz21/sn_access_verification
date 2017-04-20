@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="x_kasp_business_ev_event_list">
+    <x_kasp_business_ev_event_list action="INSERT_OR_UPDATE">
+        <end>2017-04-04</end>
+        <end_date/>
+        <event_description>HK and China offices are closed</event_description>
+        <event_name>Ching Ming Festival</event_name>
+        <start>2017-04-03</start>
+        <start_date/>
+        <sys_class_name>x_kasp_business_ev_event_list</sys_class_name>
+        <sys_created_by>SKP</sys_created_by>
+        <sys_created_on>2017-01-05 20:45:10</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>aa40258f0fc876c04789e34be1050e7c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Ching Ming Festival</sys_name>
+        <sys_package display_value="Application Access Verification" source="x_kasp_app_access">036192412b7e9200229d7b9ee8da1506</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Application Access Verification">036192412b7e9200229d7b9ee8da1506</sys_scope>
+        <sys_update_name>x_kasp_business_ev_event_list_aa40258f0fc876c04789e34be1050e7c</sys_update_name>
+        <sys_updated_by>SKP</sys_updated_by>
+        <sys_updated_on>2017-01-05 20:56:05</sys_updated_on>
+    </x_kasp_business_ev_event_list>
+</record_update>

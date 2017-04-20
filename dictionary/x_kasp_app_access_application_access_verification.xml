@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="text_index_translations=true,hasLabels=true" label="Application Access Verification" max_length="40" name="x_kasp_app_access_application_access_verification" type="collection">
+        <element label="ACS" max_length="40" name="acs" type="boolean"/>
+        <element label="Does Not Report To Me" max_length="40" name="does_not_report_to_me" type="boolean"/>
+        <element label="Hyperion-Essbase" max_length="40" name="hyperion_essbase" type="boolean"/>
+        <element label="IMANY" max_length="40" name="imany" type="boolean"/>
+        <element label="JDEdwards" max_length="40" name="jdedwards" type="boolean"/>
+        <element label="Last Verification Date" max_length="40" name="last_verification_date" read_only="true" type="glide_date"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;        var user = current.getValue('user');&#13;&#10;        var rec = new GlideRecord('sys_user');&#13;&#10;        rec.get(user);&#13;&#10;        rec.next();&#13;&#10;        return rec.getValue('manager');&#13;&#10;&#9;&#13;&#10;})(current);" label="Manager" max_length="32" name="manager" reference="sys_user" type="reference" use_dependent_field="true" virtual="true"/>
+        <element attributes="edge_encryption_enabled=true" default="Was there any change recently in the associate's responsibility that no longer require them to have the permission within the applications listed above that would present an audit risk? Example: Jane Doe, previously enter orders and now approving orders. If yes – explain below in the comment box." label="*" max_length="300" name="message2" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Micros Balance" max_length="40" name="micros_balance" type="boolean"/>
+        <element label="No" max_length="40" name="no" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" default="Uncheck any application that is not needed for associate's current responsibilities." label="*" max_length="100" name="o" read_only="true" type="string"/>
+        <element label="PeopleSoft" max_length="40" name="peoplesoft" type="boolean"/>
+        <element label="RAMS" max_length="40" name="rams" type="boolean"/>
+        <element label="RBI" max_length="40" name="rbi" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Retail Lease" max_length="40" name="retail_lease" type="boolean"/>
+        <element label="RMA Approval" max_length="40" name="rma_approval" type="boolean"/>
+        <element label="RMA Credit" max_length="40" name="rma_credit" type="boolean"/>
+        <element label="SEWN" max_length="40" name="sewn" type="boolean"/>
+        <element label="Spade" max_length="40" name="spade" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="unverified" label="Verification Status" max_length="40" name="status" read_only="true" type="string">
+            <choice>
+                <element label="Verified" sequence="0" value="verfied"/>
+                <element label="Unverified" sequence="1" value="unverified"/>
+                <element label="Auto-Verified" sequence="2" value="auto_verified"/>
+            </choice>
+        </element>
+        <element label="Associate" max_length="32" name="user" read_only="true" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Comments" max_length="1000" name="verification_message" type="string"/>
+        <element label="Workflow-AR" max_length="40" name="workflow_ar" type="boolean"/>
+        <element label="Yes" max_length="40" name="yes" type="boolean"/>
+        <index name="index">
+            <element name="manager"/>
+        </index>
+        <index name="index2">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

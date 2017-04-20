@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>acs</field>
+        <global>true</global>
+        <messages/>
+        <name>Check Manager is Updating</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+	
+	var currentUser = g_user.getFullName();
+	var manager = g_form.getDisplayBox('manager').value;
+	
+	if(currentUser != manager && g_user.hasRole('admin') == false){
+		
+		g_form.addErrorMessage('Only Manager can verify access for this user');
+		return false;
+	}
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>sebgar01</sys_created_by>
+        <sys_created_on>2016-05-05 20:41:24</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>64d1f3802b9b524445eeaacc17da15d1</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Check Manager is Updating</sys_name>
+        <sys_overrides display_value="">global</sys_overrides>
+        <sys_package display_value="Application Access Verification" source="x_kasp_app_access">036192412b7e9200229d7b9ee8da1506</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Application Access Verification">036192412b7e9200229d7b9ee8da1506</sys_scope>
+        <sys_update_name>sys_script_client_64d1f3802b9b524445eeaacc17da15d1</sys_update_name>
+        <sys_updated_by>sebgar01</sys_updated_by>
+        <sys_updated_on>2016-12-20 22:56:34</sys_updated_on>
+        <table>x_kasp_app_access_application_access_verification</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

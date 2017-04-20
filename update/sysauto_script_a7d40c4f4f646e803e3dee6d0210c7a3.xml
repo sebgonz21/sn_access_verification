@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>App Access Verification - Update/Create records, Run FIRST</name>
+        <run_as display_value="Admin ">fa14b1e9133d9a0053dc71522244b0be</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period>1970-01-02 00:00:00</run_period>
+        <run_start>2018-03-31 14:25:58</run_start>
+        <run_time>1970-01-01 05:00:00</run_time>
+        <run_type>on_demand</run_type>
+        <script><![CDATA[/**
+	Loads all in scope applications.
+	Goes through all user records, checks if user already has a record in verification table.
+	If record is found, access is updated. If not found record is created if user has access
+	to any In Scope applications.
+ */
+
+var apps = [];
+
+(function(){
+	gs.info(">>>>>VERIFY RUNNING FIRST SCHEDULE JOB");
+	var appRec = new GlideRecord('x_kasp_app_access_in_scope_applications');
+	appRec.query();
+	
+	var app = {};
+	
+	while(appRec.next()){
+		app = {
+			name: "" + appRec.getValue('citrix_name'),
+			field_name: "" + appRec.getValue('field_name')
+		};
+		apps.push(app);
+	}
+	
+	var user = new GlideRecord('sys_user');
+	user.addQuery('active','true');
+	
+	user.query();
+	
+	var appVerRecord = {};
+	var t = 0;
+	while(user.next()){
+		
+		gs.info(">>>>>VERIFY CHECKING USER " + user.getValue('user_name'));
+		appVerRecord = checkAccessVerUserRecord(user);
+		
+		if(appVerRecord != null){
+			updateAccess(appVerRecord,user);
+			appVerRecord.update();
+			gs.info(">>>>>VERIFY UPDATED RECORD FOR " + user.getValue('user_name'));
+		}else{
+			var groups = user.getValue('u_ad_members_of_group');
+			if(groups == null || groups == ''){
+				continue;
+			}
+			gs.info(">>>>>> VERIFY GROUPS FOR "+user.getValue('user_name') + " " + groups);
+			for(i = 0; i < apps.length; i++){
+				if(groups.indexOf(apps[i].name) >= 0){
+					createRecord(user);
+					break;
+				}
+			}
+			
+			
+		}
+		
+	}
+	
+})();
+
+/**
+	Checks if user already exists in Access Verification Table. 
+	Record is returned if found, null if not.
+*/
+function checkAccessVerUserRecord(user){
+	var rec = new GlideRecord('x_kasp_app_access_application_access_verification');
+	rec.addQuery('user',user.sys_id);
+	rec.query();
+	
+	if(rec.next()){
+		gs.info(">>>>>VERIFY FOUND VERIFY RECORD FOR " + rec.getElement('user').getDisplayValue('user_name'));
+		return rec;
+	}else{
+		gs.info(">>>>>VERIFY DID NOT FIND VERIFY RECORD FOR " + user.getValue('user_name'));
+		return null;
+	}
+	
+}
+
+/** Creates a new record in the Application Access Verification Table */
+function createRecord(user){
+	
+	gs.info(">>>>>VERIFY CREATING RECORD FOR " + user.getValue('user_name'));
+	
+	var newRec =  new GlideRecord('x_kasp_app_access_application_access_verification');
+	newRec.setValue('user',user.sys_id);
+	
+	updateAccess(newRec,user);
+	
+	newRec.insert();
+	
+	gs.info(">>>>>VERIFY INSERTED RECORD FOR " + user.getValue('user_name'));
+}
+
+/** Adds access to application in the Application Access Verification Record */
+function updateAccess(record, user){
+	
+	gs.info(">>>>>VERIFY UPDATING ACCESS FOR " + record.getElement('user').getDisplayValue());
+	
+	for(i = 0; i < apps.length; i++){
+		if(user.getValue('u_ad_members_of_group').indexOf(apps[i].name) >= 0){
+			gs.info(">>>>>VERIFY GIVING " + user.getValue('user_name') + " ACCESS TO " + apps[i].name);
+			record.setValue(apps[i].field_name, true);
+			
+		}else{
+			gs.info(">>>>>VERIFY REMOVING " + user.getValue('user_name') + " ACCESS TO " + apps[i].name);
+			record.setValue(apps[i].field_name, false);
+		}
+	}
+	
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>sebgar01</sys_created_by>
+        <sys_created_on>2016-07-15 14:26:29</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>a7d40c4f4f646e803e3dee6d0210c7a3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>App Access Verification - Update/Create records, Run FIRST</sys_name>
+        <sys_package display_value="Application Access Verification" source="x_kasp_app_access">036192412b7e9200229d7b9ee8da1506</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Application Access Verification">036192412b7e9200229d7b9ee8da1506</sys_scope>
+        <sys_update_name>sysauto_script_a7d40c4f4f646e803e3dee6d0210c7a3</sys_update_name>
+        <sys_updated_by>sebgar01</sys_updated_by>
+        <sys_updated_on>2017-01-17 20:37:47</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

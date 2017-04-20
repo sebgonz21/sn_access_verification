@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="workflow_ar" label="Workflow-AR" language="en" table="x_kasp_app_access_application_access_verification">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>workflow_ar</element>
+            <help/>
+            <hint/>
+            <label>Workflow-AR</label>
+            <language>en</language>
+            <name>x_kasp_app_access_application_access_verification</name>
+            <plural>Workflow-ARs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-05-03 14:45:59</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>bc6dcc631383964053dc71522244b01c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Workflow-AR</sys_name>
+            <sys_package display_value="Global" source="global">global</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Application Access Verification">036192412b7e9200229d7b9ee8da1506</sys_scope>
+            <sys_update_name>sys_documentation_x_kasp_app_access_application_access_verification_workflow_ar_en</sys_update_name>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-05-03 14:45:59</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

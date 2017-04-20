@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_label/>
+        <action_name/>
+        <action_query>false</action_query>
+        <action_run_at>server</action_run_at>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <application/>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_kasp_app_access_application_access_verification</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Create Tasks when box is unchecked</name>
+        <onclick/>
+        <order>100</order>
+        <priority>100</priority>
+        <read_access_action>false</read_access_action>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	if(current.getValue('does_not_report_to_me') == true){
+		return;
+	}
+	
+	if(current.operation() != 'update'){
+		//gs.addInfoMessage(current.operation());
+		return;
+	}
+	
+	var currentUser = gs.getUserDisplayName();
+	var manager = current.getElement('manager').getDisplayValue();
+	gs.info("Running Create Task Rule");
+	if(currentUser != manager){
+		//gs.addInfoMessage(currentUser + " " + manager);
+		return;
+	}
+	
+	var rec = new GlideRecord('x_kasp_app_access_in_scope_applications');
+	rec.query();
+	
+	while(rec.next()){
+		gs.info("Checking applications " + rec.getValue('name'));
+		var field = current.getElement(rec.getValue('field_name'));
+		if(field != null && field.changesTo(false)){
+			
+			gs.info(rec.getValue('name') + " was removed ");
+			var task = new GlideRecord('task');
+			task.setValue('short_description','Remove Access To ' + rec.getValue('name'));
+			
+			var user = current.getElement('user').getRefRecord();
+			
+			var description = 'Remove access to ' + rec.getValue('name') + ' for associate:\n\n';
+			description += 'Name: ' + user.getValue('name')+'\n';
+			description += 'User ID: ' + user.getValue('user_name')+'\n';
+			description += 'Title: ' + user.getValue('title')+'\n';
+			
+			task.setValue('description', description);
+			task.setValue('assignment_group','ecf325bd0a0a3c1c01d5569a9fbb807c'); //assign to System Security - Corporate
+			task.insert();
+			
+			gs.info("Created Task " + task.getValue('number'));
+			
+		}
+	}
+	
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>sebgar01</sys_created_by>
+        <sys_created_on>2016-04-18 19:53:43</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>f9a2c0fa2bb65600229d7b9ee8da15de</sys_id>
+        <sys_mod_count>46</sys_mod_count>
+        <sys_name>Create Tasks when box is unchecked</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Application Access Verification" source="x_kasp_app_access">036192412b7e9200229d7b9ee8da1506</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Application Access Verification">036192412b7e9200229d7b9ee8da1506</sys_scope>
+        <sys_update_name>sys_script_f9a2c0fa2bb65600229d7b9ee8da15de</sys_update_name>
+        <sys_updated_by>sebgar01</sys_updated_by>
+        <sys_updated_on>2016-09-13 15:40:12</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+</record_update>

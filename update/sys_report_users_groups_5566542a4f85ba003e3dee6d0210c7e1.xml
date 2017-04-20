@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_report_users_groups">
+    <sys_report_users_groups action="INSERT_OR_UPDATE">
+        <group_id display_value="Service-Now Administrators" name="Service-Now Administrators">ecf325c90a0a3c1c011bf2b52c0e6557</group_id>
+        <report_id display_value="App Support - Shipment tickets">dd66542a4f85ba003e3dee6d0210c7e0</report_id>
+        <sys_class_name>sys_report_users_groups</sys_class_name>
+        <sys_created_by>SKP</sys_created_by>
+        <sys_created_on>2017-02-22 19:08:09</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>5566542a4f85ba003e3dee6d0210c7e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>dd66542a4f85ba003e3dee6d0210c7e0</sys_name>
+        <sys_package display_value="Application Access Verification" source="x_kasp_app_access">036192412b7e9200229d7b9ee8da1506</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Application Access Verification">036192412b7e9200229d7b9ee8da1506</sys_scope>
+        <sys_update_name>sys_report_users_groups_5566542a4f85ba003e3dee6d0210c7e1</sys_update_name>
+        <sys_updated_by>SKP</sys_updated_by>
+        <sys_updated_on>2017-02-22 19:08:09</sys_updated_on>
+        <user_id/>
+    </sys_report_users_groups>
+</record_update>

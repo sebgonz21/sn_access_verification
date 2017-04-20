@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="sys_user_grmember" version="2" view="rpt-temp64a21b74c5b61540f9350d5ad0fc120bSKP">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>group</element>
+            <list_id display_value="sys_user_grmember" element="NULL" name="sys_user_grmember" parent="NULL" relationship="NULL" sys_domain="global" view="2f19694b0f20f6844789e34be1050ea3">6319694b0f20f6844789e34be1050ea4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>SKP</sys_created_by>
+            <sys_created_on>2017-01-30 17:55:08</sys_created_on>
+            <sys_id>6719694b0f20f6844789e34be1050ea4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>SKP</sys_updated_by>
+            <sys_updated_on>2017-01-30 17:55:08</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>user</element>
+            <list_id display_value="sys_user_grmember" element="NULL" name="sys_user_grmember" parent="NULL" relationship="NULL" sys_domain="global" view="2f19694b0f20f6844789e34be1050ea3">6319694b0f20f6844789e34be1050ea4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>SKP</sys_created_by>
+            <sys_created_on>2017-01-30 17:55:08</sys_created_on>
+            <sys_id>e719694b0f20f6844789e34be1050ea4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>SKP</sys_updated_by>
+            <sys_updated_on>2017-01-30 17:55:08</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>user.first_name</element>
+            <list_id display_value="sys_user_grmember" element="NULL" name="sys_user_grmember" parent="NULL" relationship="NULL" sys_domain="global" view="2f19694b0f20f6844789e34be1050ea3">6319694b0f20f6844789e34be1050ea4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>SKP</sys_created_by>
+            <sys_created_on>2017-01-30 17:55:08</sys_created_on>
+            <sys_id>6b19694b0f20f6844789e34be1050ea4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>SKP</sys_updated_by>
+            <sys_updated_on>2017-01-30 17:55:08</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>user.last_name</element>
+            <list_id display_value="sys_user_grmember" element="NULL" name="sys_user_grmember" parent="NULL" relationship="NULL" sys_domain="global" view="2f19694b0f20f6844789e34be1050ea3">6319694b0f20f6844789e34be1050ea4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>SKP</sys_created_by>
+            <sys_created_on>2017-01-30 17:55:08</sys_created_on>
+            <sys_id>eb19694b0f20f6844789e34be1050ea4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>SKP</sys_updated_by>
+            <sys_updated_on>2017-01-30 17:55:08</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>user.employee_number</element>
+            <list_id display_value="sys_user_grmember" element="NULL" name="sys_user_grmember" parent="NULL" relationship="NULL" sys_domain="global" view="2f19694b0f20f6844789e34be1050ea3">6319694b0f20f6844789e34be1050ea4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>SKP</sys_created_by>
+            <sys_created_on>2017-01-30 17:55:08</sys_created_on>
+            <sys_id>6f19694b0f20f6844789e34be1050ea4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>SKP</sys_updated_by>
+            <sys_updated_on>2017-01-30 17:55:08</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>user.department</element>
+            <list_id display_value="sys_user_grmember" element="NULL" name="sys_user_grmember" parent="NULL" relationship="NULL" sys_domain="global" view="2f19694b0f20f6844789e34be1050ea3">6319694b0f20f6844789e34be1050ea4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>SKP</sys_created_by>
+            <sys_created_on>2017-01-30 17:55:08</sys_created_on>
+            <sys_id>ef19694b0f20f6844789e34be1050ea4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>SKP</sys_updated_by>
+            <sys_updated_on>2017-01-30 17:55:08</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>sys_user_grmember</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>SKP</sys_created_by>
+            <sys_created_on>2017-01-30 17:55:08</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>6319694b0f20f6844789e34be1050ea4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name/>
+            <sys_package/>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Application Access Verification">036192412b7e9200229d7b9ee8da1506</sys_scope>
+            <sys_update_name/>
+            <sys_updated_by>SKP</sys_updated_by>
+            <sys_updated_on>2017-01-30 17:55:08</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rpt-temp64a21b74c5b61540f9350d5ad0fc120bskp" name="rpt-temp64a21b74c5b61540f9350d5ad0fc120bSKP">2f19694b0f20f6844789e34be1050ea3</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

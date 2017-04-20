@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="In Scope Applications" max_length="40" name="x_kasp_app_access_in_scope_applications" type="collection">
+        <element label="Citrix Name" max_length="40" name="citrix_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Field Name" max_length="40" name="field_name" type="string"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+    </element>
+</database>

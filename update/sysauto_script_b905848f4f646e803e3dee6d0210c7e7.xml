@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>App Access Verification - Clean Up Job, Run SECOND</name>
+        <run_as display_value="Admin ">fa14b1e9133d9a0053dc71522244b0be</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period>1970-01-02 00:00:00</run_period>
+        <run_start>2019-03-30 14:26:40</run_start>
+        <run_time>1970-01-01 05:00:00</run_time>
+        <run_type>on_demand</run_type>
+        <script><![CDATA[var apps = [];
+
+/* 
+	Loads in scope applications
+	Goes through all verfication records and checks user has access to applications.
+	If user does not have access to ANY applications record is deleted.
+*/
+(function(){
+
+    var appRec = new GlideRecord('x_kasp_app_access_in_scope_applications');
+    appRec.query();
+
+    var app = {};
+    
+    while(appRec.next()){
+        app = {
+            name: "" + appRec.getValue('citrix_name'),
+            field_name: "" + appRec.getValue('field_name')
+        };
+        apps.push(app);
+    }
+    
+    var rec = new GlideRecord('x_kasp_app_access_application_access_verification');
+    rec.query();
+    
+    var hasAccess = false;
+    
+    while(rec.next()){
+        gs.info('>>>>>>>>APP Verify Checking ' + rec.getElement('user').getDisplayValue());
+		if(rec.user.active == false){
+			gs.info('>>>>>>>>APP Verify Checking ' + rec.getElement('user').getDisplayValue() + " is inactive, DELETING");
+			rec.deleteRecord();
+		}else{
+			for(var i = 0; i < apps.length; i++){
+
+				if(rec.getValue(apps[i].field_name) == true){
+					hasAccess = true;
+					gs.info('>>>>>>>>APP Verify ' + rec.getElement('user').getDisplayValue() + ' has access to ' + apps[i].field_name);
+					break;
+				}
+
+			}
+			if(hasAccess){
+				gs.info('>>>>>>>>APP Verify ' + rec.getElement('user').getDisplayValue() + ' HAS ACCESS');
+				hasAccess = false;
+				continue;
+			}else{
+				gs.info('>>>>>>>>APP Verify ' + rec.getElement('user').getDisplayValue() + ' DOES NOT HAVE ANY ACCESS DELTEING');
+				rec.deleteRecord();
+			}
+		}
+    }
+})();]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>sebgar01</sys_created_by>
+        <sys_created_on>2016-07-15 14:27:11</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>b905848f4f646e803e3dee6d0210c7e7</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>App Access Verification - Clean Up Job, Run SECOND</sys_name>
+        <sys_package display_value="Application Access Verification" source="x_kasp_app_access">036192412b7e9200229d7b9ee8da1506</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Application Access Verification">036192412b7e9200229d7b9ee8da1506</sys_scope>
+        <sys_update_name>sysauto_script_b905848f4f646e803e3dee6d0210c7e7</sys_update_name>
+        <sys_updated_by>sebgar01</sys_updated_by>
+        <sys_updated_on>2017-01-17 20:37:32</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>
